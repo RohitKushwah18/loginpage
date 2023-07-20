@@ -1,38 +1,92 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "CustomFont";
+}
+
 .App {
   text-align: center;
+  float: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Josefin Sans';
+  background-color: #FFFAFB;
+
+}
+.page{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cover{
+  height: 50vh;
+  width : 50vh;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0.5vh 0.5vh black;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-btn{
+  height: 3.5vh;
+  width: 15vh;
+  position: relative;
+  align-items: center;
+  background-color: aqua;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0.25em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alt-login {
+  width: 80%;
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
 }
+
+.facebook{
+  width: 47.5%;
+  height: 90%;
+  border-radius: 0.25em;
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.google{
+  width: 47.5%;
+  height: 90%;
+  border-radius: 0.25em;
+  background-color: blue;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer; 
+}
+input{
+  text-align: center;
+  border-radius: 0.25em;
+  height: 2.5em;
+  width: 80%;
+}
+
+.errorMsg {
+  max-width: 350px;
+  color: #f21e08;
+  padding: 2px 0;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+
